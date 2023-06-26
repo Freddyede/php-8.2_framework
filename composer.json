@@ -1,9 +1,0 @@
-{
-    "name": "kali/framework_maisons",
-    "autoload": {
-        "psr-4": {
-            "Core\\": "Core/",
-            "App\\": "src/"
-        }
-    }
-}
