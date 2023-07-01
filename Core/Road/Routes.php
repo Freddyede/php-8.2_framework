@@ -2,8 +2,7 @@
 
 namespace Core\Road;
 
-use Core\Road\Attribute\Route;
-use ReflectionClass;
+use Core\Modules\RoutingModules;
 use ReflectionException;
 
 /**
@@ -23,25 +22,9 @@ class Routes
      */
     final public function registerRoutesFromControllerAttributes($prefix, array $controllers): void
     {
-        foreach ($controllers as $controller) {
-            $reflectionController = new ReflectionClass($controller);
-            foreach ($reflectionController->getMethods() as $method) {
-                foreach ($method->getAttributes(Route::class) as $attribute) {
-                    $route = $attribute->newInstance();
-                    $this->get($prefix, $route->getPath(), $controller, $method->getName());
-                    if (array_key_exists('name', $attribute->getArguments())) {
-                        Route::setControllerName($attribute->getArguments()[0], $attribute->getArguments()['name']);
-                    }
-                }
-            }
-        }
+        RoutingModules::readControllers($prefix, $controllers);
     }
 
     // section get
-    final public function get($prefix, $path, $controller, $method): void
-    {
-        if ($_SERVER['REQUEST_URI'] === $prefix . $path) {
-            (new $controller())->{$method}();
-        }
-    }
+
 }
