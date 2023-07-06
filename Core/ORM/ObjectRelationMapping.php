@@ -10,6 +10,9 @@ use PDO;
 class ObjectRelationMapping
 {
 
+    /**
+     * @var array $entityObjects not used in project
+     */
     public static array $entityObjects;
 
 
