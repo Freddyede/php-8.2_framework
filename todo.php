@@ -9,6 +9,7 @@
  * fixme :
  *  - 1 : [ ] How to create my Object Relation Mapping (priority: 1)
  *  - 2 : [ ] How to connect a database in my Object Relation Mapping (priority: 1)
+ *  - 3 : [ ] Find to add automation drag&drop methods
  *
  * STRUCTURE Symfony :
  *  - 1 : [ ] Find an method to create a table since php file name (priority: 1, structure_symfony: 1)
