@@ -35,7 +35,7 @@ class RepositoryRequest
     {
         if (is_null(self::$instance)) {
             include_once __DIR__ . '/../../../../index.php';
-            self::$instance = new PDO('mysql:host=localhost;dbname=' . DATABASES['database'], DATABASES['username'], DATABASES['password']);
+            self::$instance = (OBJECT_RELATION_MAPPING_MODULES)::getPdo(false);
         } else {
             self::$instance = NULL;
         }
@@ -54,5 +54,4 @@ class RepositoryRequest
     {
         self::$tableName = $tableName;
     }
-
 }
