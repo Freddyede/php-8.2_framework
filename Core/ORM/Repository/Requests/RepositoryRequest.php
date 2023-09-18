@@ -23,7 +23,8 @@ class RepositoryRequest
     }
 
 
-    /**new Repository()
+    /**
+     * New Repository()
      * Méthode qui crée l'unique instance de la classe
      * si elle n'existe pas encore puis la retourne.
      * @return RepositoryRequest|null
@@ -33,7 +34,7 @@ class RepositoryRequest
     public static function getInstance(): ?PDO
     {
         if (is_null(self::$instance)) {
-            include_once __DIR__ . '/../../../index.php';
+            include_once __DIR__ . '/../../../../index.php';
             self::$instance = new PDO('mysql:host=localhost;dbname=' . DATABASES['database'], DATABASES['username'], DATABASES['password']);
         } else {
             self::$instance = NULL;

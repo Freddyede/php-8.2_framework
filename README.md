@@ -11,12 +11,12 @@
 
 ## <u>Tâches</u> :
 
-|       Author       |             Nom             |                      Description                      | TaskList groups  |               Developers                | Version |
-|:------------------:|:---------------------------:|:-----------------------------------------------------:|:----------------:|:---------------------------------------:|:-------:|
-| Patouillard Franck |    AuthenticatorModules     |      Authentifier les administrateurs et la cli       |   IN PROGRESS    | Franck Patouillard, Alexandre Rodriguez |  0.0.1  |
-| Patouillard Franck |           Symfony           |          Tous les composants de Symfony6.6.3          | MODULES EXTERNES | Franck Patouillard, Alexandre Rodriguez |  0.0.1  |
-| Patouillard Franck |             ORM             | Reprendre l'ORM de Doctrine et essayer de l'optimiser | MODULES EXTERNES | Franck Patouillard, Alexandre Rodriguez |  0.0.1  |
-| Patouillard Franck |            React            | Reprendre l'ORM de Doctrine et essayer de l'optimiser | MODULES EXTERNES | Franck Patouillard, Alexandre Rodriguez |  0.0.1  |
-| Patouillard Franck |         Front/Back          | Trouver le moyen de contourner les problèmes de CORS  | MODULES EXTERNES | Franck Patouillard, Alexandre Rodriguez |  0.0.1  |
-| Patouillard Franck |            UI/UX            |            Pensez le design des composants            |      DESIGN      | Franck Patouillard, Alexandre Rodriguez |  0.0.1  |
-| Patouillard Franck | Modern back design patterns |               All documents can help us               |     HELPERS      | Franck Patouillard, Alexandre Rodriguez |  0.0.1  |
+|       Author       |             Nom             |                      Description                      | TaskList groups  |     Developers     | Version |
+|:------------------:|:---------------------------:|:-----------------------------------------------------:|:----------------:|:------------------:|:-------:|
+| Patouillard Franck |    AuthenticatorModules     |      Authentifier les administrateurs et la cli       |   IN PROGRESS    | Franck Patouillard |  0.0.1  |
+| Patouillard Franck |           Symfony           |          Tous les composants de Symfony6.6.3          | MODULES EXTERNES | Franck Patouillard |  0.0.1  |
+| Patouillard Franck |             ORM             | Reprendre l'ORM de Doctrine et essayer de l'optimiser | MODULES EXTERNES | Franck Patouillard |  0.0.1  |
+| Patouillard Franck |            React            | Reprendre l'ORM de Doctrine et essayer de l'optimiser | MODULES EXTERNES | Franck Patouillard |  0.0.1  |
+| Patouillard Franck |         Front/Back          | Trouver le moyen de contourner les problèmes de CORS  | MODULES EXTERNES | Franck Patouillard |  0.0.1  |
+| Patouillard Franck |            UI/UX            |            Pensez le design des composants            |      DESIGN      | Franck Patouillard |  0.0.1  |
+| Patouillard Franck | Modern back design patterns |               All documents can help us               |     HELPERS      | Franck Patouillard |  0.0.1  |

@@ -6,7 +6,7 @@ use PDO;
 
 class ObjectRelationMappingModules
 {
-    private static array $multipleDatabases = [];
+    private static null|PDO|array $multipleDatabases = [];
 
     public static function getPdo(bool $activatedArray, ?array $multipleDatabases = NULL): array|null|PDO
     {
@@ -14,19 +14,19 @@ class ObjectRelationMappingModules
         require __DIR__ . '/../../bin/init/databases.php';
         if ($activatedArray) {
             for ($i = 0; $i < count($multipleDatabases); $i++) {
-                (
+                if (
                     !empty($multipleDatabases[$i]['username']) &&
                     !empty($multipleDatabases[$i]['password']) &&
                     !empty($multipleDatabases[$i]['databases'])
-                ) ? $multipleDatabases[$i] = new PDO('mysql:host=localhost;dbname=' . $multipleDatabases[$i]['databases'], $multipleDatabases[$i]['username'], $multipleDatabases[$i]['password']) : NULL;
+                ) {
+                    self::$multipleDatabases[$i][] = new PDO('mysql:host=localhost;dbname=' . $multipleDatabases[$i]['databases'], $multipleDatabases[$i]['username'], $multipleDatabases[$i]['password']);
+                } else {
+                    self::$multipleDatabases = NULL;
+                }
             }
-
-            return $multipleDatabases;
+        } else {
+            self::$multipleDatabases = new PDO('mysql:host=localhost;dbname=' . $multipleDatabases['databases'], $multipleDatabases['username'], $multipleDatabases['password']);
         }
-        return (
-            !empty(DATABASES['username']) &&
-            !empty(DATABASES['password']) &&
-            !empty(DATABASES['databases'])
-        ) ? new PDO('mysql:host=localhost;dbname=' . DATABASES['databases'], DATABASES['username'], DATABASES['password']) : NULL;
+        return self::$multipleDatabases;
     }
 }

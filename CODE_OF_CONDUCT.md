@@ -33,7 +33,7 @@ Examples of unacceptable behavior include:
 * Public or private harassment
 * Publishing others' private information, such as a physical or email
   address, without their explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
+* Other conducts which could reasonably be considered inappropriate in a
   professional setting
 
 ## Enforcement Responsibilities
@@ -63,8 +63,7 @@ reported to the community leaders responsible for enforcement at
 Endle-Work.
 All complaints will be reviewed and investigated promptly and fairly.
 
-All community leaders are obligated to respect the privacy and security of the
-reporter of any incident.
+All community leaders are obligated to respect the privacy and security of any incident.
 
 ## Enforcement Guidelines
 
@@ -105,9 +104,9 @@ Violating these terms may lead to a permanent ban.
 
 ### 4. Permanent Ban
 
-**Community Impact**: Demonstrating a pattern of violation of community
+**Community Impact**: Demonstrating a pattern of community
 standards, including sustained inappropriate behavior, harassment of an
-individual, or aggression toward or disparagement of classes of individuals.
+individual, or aggression toward or disparagement of individuals.
 
 **Consequence**: A permanent ban from any sort of public interaction within
 the community.

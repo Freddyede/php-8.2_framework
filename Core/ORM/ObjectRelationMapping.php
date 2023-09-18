@@ -2,8 +2,7 @@
 
 namespace Core\ORM;
 
-use Core\Modules\DirectoryModules;
-use Core\Modules\ObjectRelationMappingModules;
+use Core\Modules\{DirectoryModules, ObjectRelationMappingModules};
 use Exception;
 use PDO;
 
@@ -11,7 +10,7 @@ class ObjectRelationMapping
 {
 
     /**
-     * @var array $entityObjects not used in project
+     * @var array $entityObjects not used in a project
      */
     public static array $entityObjects;
 
