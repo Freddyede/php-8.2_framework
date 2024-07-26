@@ -12,6 +12,8 @@ function autoload($className): void
 {
     if (str_starts_with($className, "App\\")) {
         $className = getSources($className);
+    } else if (str_starts_with($className, "Core\\")) {
+        $className = getSources($className);
     }
     $link = str_replace("\\", "/", __DIR__ . "/" . $className);
     if (is_file($link . ".php")) {

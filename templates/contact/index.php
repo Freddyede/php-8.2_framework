@@ -1,7 +1,6 @@
 <?php
 include_once __DIR__ . '/../../index.php';
 require_once PATH_AUTOLOADER;
-
 ?>
 <!DOCTYPE html>
 <html lang="fr">

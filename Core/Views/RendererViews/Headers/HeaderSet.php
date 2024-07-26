@@ -1,8 +1,9 @@
 <?php
 
 namespace Core\Views\RendererViews\Headers;
+use Core\Views\Options\FrameworkOptions;
 
-class HeaderSet
+class HeaderSet extends FrameworkOptions
 {
     private static array $headersStructure = [];
 

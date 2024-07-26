@@ -7,9 +7,7 @@ use Attribute;
 #[Attribute]
 class Route
 {
-
     private static array $controllerName = [];
-
     public function __construct(private readonly string $path, private readonly ?string $name = NULL)
     {
     }
@@ -42,7 +40,6 @@ class Route
      * @return string
      * @version 0.0.1
      */
-
     public function getName(): string
     {
         return $this->name;

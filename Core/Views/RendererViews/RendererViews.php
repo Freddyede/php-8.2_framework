@@ -21,7 +21,7 @@ class RendererViews extends HeaderSet
      * @version 0.0.1
      * @author Patouillard Franck <patouillardfranck3@gmail.com>
      */
-    public static function rendererViews(string $views, array|null $parameters = []): void
+    public function rendererViews(string $views, array|null $parameters = []): void
     {
         self::setHeader('meta', 'utf-8');
         if (isset($parameters)) {
@@ -75,7 +75,7 @@ class RendererViews extends HeaderSet
      * @author Patouillard Franck <patouillardfranck3@gmail.com>
      * @version 0.0.1
      */
-    public static function setParameters($key, $value): void
+    public function setParameters($key, $value): void
     {
         self::$parameters[$key] = $value;
     }
